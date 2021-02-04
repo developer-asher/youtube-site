@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First - YouTube Site</title>
+    <link rel="stylesheet" href="common.css">
+    <script src="https://kit.fontawesome.com/8246ad551c.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<header id="header">
+    <h1 class="hd_log">
+        <a href="youtube.com">
+            <i class="fab fa-youtube"></i>
+            Youtube
+        </a>
+    </h1>
+    <div class='hd_icons'>
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+        <button>
+            <i class="fas fa-ellipsis-v"></i>
+        </button>
+    </div>
+</header>
+
+<div id="search">
+    <button class='icon_back'>
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <form class='form_search'>
+        <label for="box_search" class='blind'>검색창</label>
+        <input type="text" placeholder="YouTube검색" id="box_search">
+    </form>
+    <button class='icon_search'>
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+
+<div id="setting">
+    <ul class='setting_list'>
+        <li><a href="">설정</a></li>
+        <li><a href="">재생설정</a></li>
+        <li><a href="">YouTube의 내 데이터</a></li>
+        <li><a href="">의견 보내기</a></li>
+        <li><a href="">도움말</a></li>
+        <li><a href="">데스크톱</a></li>
+        <li><a href="">취소</a></li>
+    </ul>
+    <div class='setting_bg'></div>
+</div>
+
+<div id="video">
+    <iframe src="https://www.youtube.com/embed/67stn7Pu7s4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="title">
+    <p class="txt_tag">
+        #자바스크립트 #프론트엔드 #백엔드
+    </p>
+    <div class='box_title'>
+        <h2 class="title_main">
+            클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML,CSS,Javascript
+        </h2>
+        <button class=btn_toggle>
+            <i class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+    <span class="txt_views">
+        조회수 47,079회
+    </span>
+</div>
+
+<section id="btn">
+    <ul>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+    </ul>
+</section>
+
+<div id="user">
+    <div>
+        <i class="fas fa-dog"></i>
+        <p>
+            <a href="/">드림코딩 by 엘리</a>
+            <span>구독자 6.36만명</span>
+        </p>
+    </div>
+    <span>
+        구독중
+    </span>
+</div>
+
+<p id="description">
+    설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.설명이 들어가있습니다.
+</p>
+
+<div id="relation">
+    <div>
+        <p>
+            다음 동영상
+        </p>
+        <div>
+            <span>자동재생</span>
+            <button></button>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/67stn7Pu7s4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.</p>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/67stn7Pu7s4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.이 영상은 관련 영상입니다.</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
