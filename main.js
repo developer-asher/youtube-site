@@ -1,6 +1,26 @@
 const eventType = 'click',
     classOn = 'on';
 
+
+function handleVideoInfo() {
+    const btnArrow = document.querySelector('.btn_toggle'),
+        arrowUpDown = btnArrow.querySelector('i'),
+        videoInfo = document.querySelector('#video_info');
+
+    btnArrow.addEventListener(eventType, () => {
+        videoInfo.classList.toggle(classOn)
+        
+        if(arrowUpDown.classList.contains('fa-arrow-up')) {
+            arrowUpDown.classList.remove('fa-arrow-up');
+            arrowUpDown.classList.add('fa-arrow-down');
+        }
+        else if(arrowUpDown.classList.contains('fa-arrow-down')) {
+            arrowUpDown.classList.remove('fa-arrow-down');
+            arrowUpDown.classList.add('fa-arrow-up');
+        }
+    });
+}
+
 function handleSettingBox() {
     const btnSetting = document.querySelector('.hd_icons .fa-ellipsis-v'),
         setttingBg = document.querySelector('.setting_bg'),
@@ -30,6 +50,25 @@ function handleSearchBox() {
 function init(){
     handleSearchBox();
     handleSettingBox();
+    handleVideoInfo();
+function handleVideoInfo() {
+    const btnArrow = document.querySelector('.btn_toggle'),
+        arrowUpDown = btnArrow.querySelector('i'),
+        videoInfo = document.querySelector('#video_info');
+
+    btnArrow.addEventListener(eventType, () => {
+        videoInfo.classList.toggle(classOn)
+        
+        if(arrowUpDown.classList.contains('fa-arrow-up')) {
+            arrowUpDown.classList.remove('fa-arrow-up');
+            arrowUpDown.classList.add('fa-arrow-down');
+        }
+        else if(arrowUpDown.classList.contains('fa-arrow-down')) {
+            arrowUpDown.classList.remove('fa-arrow-down');
+            arrowUpDown.classList.add('fa-arrow-up');
+        }
+    });
+}
 }
 
 init();
