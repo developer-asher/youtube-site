@@ -1,32 +1,21 @@
-const iconSearch = document.querySelector('.hd_icons .fa-search'),
-    iconSetting = document.querySelector('.hd_icons .fa-ellipsis-v'),
-    searchBox = document.querySelector('#search'),
-    iconBack = document.querySelector('.icon_back'),
-    settingWrap = document.querySelector('#setting');
-    setList = document.querySelector('.setting_list'),
-    setBg = document.querySelector('.setting_bg');
-
-function handleSettingBox() {
-    iconSetting.addEventListener('click', ()=>
-        settingWrap.classList.add('on')
-    );
-    setBg.addEventListener('click', () =>
-        settingWrap.classList.remove('on')
-    );
-}
+const eventType = 'click',
+    classOn = 'on';
 
 function handleSearchBox() {
-    iconSearch.addEventListener('click', () =>
-        searchBox.classList.add('on')
+    const btnSearch = document.querySelector('.hd_icons .fa-search'),
+    btnBack = document.querySelector('.icon_back'),
+    searchBox = document.querySelector('#search');
+
+    btnSearch.addEventListener(eventType, () =>
+        searchBox.classList.toggle(classOn)
     );
-    iconBack.addEventListener('click', () =>
-        searchBox.classList.remove('on')
+    btnBack.addEventListener(eventType, () =>
+        searchBox.classList.toggle(classOn)
     );
 }
 
 function init(){
     handleSearchBox();
-    handleSettingBox();
 }
 
 init();
