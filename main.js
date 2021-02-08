@@ -1,6 +1,13 @@
 const eventType = 'click',
     classOn = 'on';
 
+function handleAutoPlay() {
+    const btnAutoPlay = document.querySelector('.btn_autoPlay');
+    
+    btnAutoPlay.addEventListener('click', () =>
+        btnAutoPlay.classList.toggle(classOn)
+    );
+}
 
 function handleVideoInfo() {
     const btnArrow = document.querySelector('.btn_toggle'),
@@ -51,24 +58,7 @@ function init(){
     handleSearchBox();
     handleSettingBox();
     handleVideoInfo();
-function handleVideoInfo() {
-    const btnArrow = document.querySelector('.btn_toggle'),
-        arrowUpDown = btnArrow.querySelector('i'),
-        videoInfo = document.querySelector('#video_info');
-
-    btnArrow.addEventListener(eventType, () => {
-        videoInfo.classList.toggle(classOn)
-        
-        if(arrowUpDown.classList.contains('fa-arrow-up')) {
-            arrowUpDown.classList.remove('fa-arrow-up');
-            arrowUpDown.classList.add('fa-arrow-down');
-        }
-        else if(arrowUpDown.classList.contains('fa-arrow-down')) {
-            arrowUpDown.classList.remove('fa-arrow-down');
-            arrowUpDown.classList.add('fa-arrow-up');
-        }
-    });
-}
+    handleAutoPlay();
 }
 
 init();
